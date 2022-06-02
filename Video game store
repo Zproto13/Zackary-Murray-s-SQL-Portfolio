@@ -1,0 +1,20 @@
+CREATE TABLE video_games (id INTEGER PRIMARY KEY,Name TEXT,Rating INTEGER, Violence_lvl INTEGER, popularity INTEGER, VGCRS TEXT);
+INSERT INTO video_games VALUES(1, "God of War", 4.7,9,89,"M");
+INSERT INTO video_games VALUES(2, "Kirby's Bizaree adventure", 2.7,3,59,"E");
+INSERT INTO video_games VALUES(4, "Legend of Zelda", 4.9,6,87,"T");
+INSERT INTO video_games VALUES(5, "Log Horizon", 3.9,7,69,"T");
+INSERT INTO video_games VALUES(6, "Baynetta", 4.4,8.3,72,"T");
+INSERT INTO video_games VALUES(7, "Super smash bros", 4.3,7,79,"T");
+INSERT INTO video_games VALUES(8, "Dark Souls", 4.8,9.6,95,"R");
+INSERT INTO video_games VALUES(9, "Bloodborne", 4.9,10,100,"R");
+INSERT INTO video_games VALUES(10, "God of War 2", 4.7,9,89,"M");
+INSERT INTO video_games VALUES(11, "God of War 3", 4.7,9,89,"M");
+INSERT INTO video_games VALUES(12, "God of War Ragnok", 4.7,9,89,"M");
+INSERT INTO video_games VALUES(13, "Tak & the power of juju", 2.9,3,68,"E");
+INSERT INTO video_games VALUES(14, "Mafia 2", 3.3,6,71,"M");
+INSERT INTO video_games VALUES(15, "GTA 5", 4.3,7.8,82,"R");
+
+Select * FROM video_games;
+Select Rating FROM video_games WHERE Rating <4.0 ORDER BY Rating;
+
+select AVG(Rating) FROM video_games WHERE Rating <4.0;
